@@ -1,0 +1,71 @@
+:root {
+    --accent-color: lightgreen;
+}
+
+.input-field {
+    height: 2em;
+    margin: 8px;
+    outline-style: none;
+}
+
+.input-field:focus {
+    border-color: var(--accent-color);
+    border-style: solid;
+}
+
+button {
+    margin: 20px;
+    padding: 10px;
+    border-radius: 100px;
+    border-style: none;
+    background-color: var(--accent-color);
+}
+
+button:hover {
+    background-color: rgb(117, 212, 117);
+}
+
+p {
+    margin: 8px;
+}
+
+.content {
+    text-align: center;
+}
+
+.card {
+    width: max-content;
+    padding: 30px;
+    margin: auto;
+    border: 2px solid lightgray;
+    border-radius: 10px;
+}
+
+body {
+    background-color: #fbfbfb;
+}
+
+hr {
+    height: 1px;
+    margin: 50px 50px 50px 50px;
+    border: none;
+    border-top: 1px solid lightgray;
+}
+
+.text {
+    text-align: left;
+    margin-top: 50px;
+}
+
+.footer-text {
+    margin-bottom: 80px;
+}
+
+pre {
+    font-family: inherit;
+}
+
+#gpa {
+    font-size: x-large;
+    font-family: sans-serif;
+}

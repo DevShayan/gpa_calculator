@@ -5,12 +5,12 @@ const subject4 = document.getElementById("subject_4");
 const subject5 = document.getElementById("subject_5");
 const subject6 = document.getElementById("subject_6");
 
-const creditHours1 = document.getElementById("total_subj1");
-const creditHours2 = document.getElementById("total_subj2");
-const creditHours3 = document.getElementById("total_subj3");
-const creditHours4 = document.getElementById("total_subj4");
-const creditHours5 = document.getElementById("total_subj5");
-const creditHours6 = document.getElementById("total_subj6");
+const creditHours1 = document.getElementById("c_hours1");
+const creditHours2 = document.getElementById("c_hours2");
+const creditHours3 = document.getElementById("c_hours3");
+const creditHours4 = document.getElementById("c_hours4");
+const creditHours5 = document.getElementById("c_hours5");
+const creditHours6 = document.getElementById("c_hours6");
 
 const obtainedMarks1 = document.getElementById("obtained_subj1");
 const obtainedMarks2 = document.getElementById("obtained_subj2");
@@ -19,8 +19,8 @@ const obtainedMarks4 = document.getElementById("obtained_subj4");
 const obtainedMarks5 = document.getElementById("obtained_subj5");
 const obtainedMarks6 = document.getElementById("obtained_subj6");
 
-const obtainedMarks = [];
-const cHours = [];
+let obtainedMarks = [];
+let cHours = [];
 
 const button = document.getElementById("btn_calculate");
 
@@ -32,19 +32,24 @@ button.onclick = function() {
 }
 
 function init() {
-    obtainedMarks.push(parseInt(obtainedMarks1.value));
-    obtainedMarks.push(parseInt(obtainedMarks2.value));
-    obtainedMarks.push(parseInt(obtainedMarks3.value));
-    obtainedMarks.push(parseInt(obtainedMarks4.value));
-    obtainedMarks.push(parseInt(obtainedMarks5.value));
-    obtainedMarks.push(parseInt(obtainedMarks6.value));
+    obtainedMarks = [
+        parseInt(obtainedMarks1.value),
+        parseInt(obtainedMarks2.value),
+        parseInt(obtainedMarks3.value),
+        parseInt(obtainedMarks4.value),
+        parseInt(obtainedMarks5.value),
+        parseInt(obtainedMarks6.value)
+    ];
 
-    cHours.push(parseInt(creditHours1.value));
-    cHours.push(parseInt(creditHours2.value));
-    cHours.push(parseInt(creditHours3.value));
-    cHours.push(parseInt(creditHours4.value));
-    cHours.push(parseInt(creditHours5.value));
-    cHours.push(parseInt(creditHours6.value));
+    cHours = [
+        parseInt(creditHours1.value),
+        parseInt(creditHours2.value),
+        parseInt(creditHours3.value),
+        parseInt(creditHours4.value),
+        parseInt(creditHours5.value),
+        parseInt(creditHours6.value)
+    ];
+
 }
 
 function calculateGPA() {

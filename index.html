@@ -10,29 +10,80 @@
 
   <body>
 
-    <div>
-      <input id="subject_1" type="text" placeholder="Subject 1">
-      <input id="total_subj1" placeholder="Credit Hours">
-      <input id="obtained_subj1" placeholder="Obtained Marks"><br>
-      <input id="subject_2" type="text" placeholder="Subject 2">
-      <input id="total_subj2" placeholder="Credit Hours">
-      <input id="obtained_subj2" placeholder="Obtained Marks"><br>
-      <input id="subject_3" type="text" placeholder="Subject 3">
-      <input id="total_subj3" placeholder="Credit Hours">
-      <input id="obtained_subj3" placeholder="Obtained Marks"><br>
-      <input id="subject_4" type="text" placeholder="Subject 4">
-      <input id="total_subj4" placeholder="Credit Hours">
-      <input id="obtained_subj4" placeholder="Obtained Marks"><br>
-      <input id="subject_5" type="text" placeholder="Subject 5">
-      <input id="total_subj5" placeholder="Credit Hours">
-      <input id="obtained_subj5" placeholder="Obtained Marks"><br>
-      <input id="subject_6" type="text" placeholder="Subject 6">
-      <input id="total_subj6" placeholder="Credit Hours">
-      <input id="obtained_subj6" placeholder="Obtained Marks"><br>
-      <button id="btn_calculate">Calculate</button>
-    </div>
+    <div class="content">
+      <h1>GPA Calculator for FUUAST</h1>
 
-    <p id="gpa">GPA:</p>
+      <div class="card">
+        <label for="subject_1">Subject 1</label>
+        <input id="subject_1" class="input-field" type="text">
+        <label for="c_hours1">Credit Hours</label>
+        <input id="c_hours1" class="input-field">
+        <label for="obtained_subj1">Obtained Marks</label>
+        <input id="obtained_subj1" class="input-field"><br>
+
+        <label for="subject_2">Subject 2</label>
+        <input id="subject_2" class="input-field" type="text">
+        <label for="c_hours2">Credit Hours</label>
+        <input id="c_hours2" class="input-field">
+        <label for="obtained_subj2">Obtained Marks</label>
+        <input id="obtained_subj2" class="input-field"><br>
+
+        <label for="subject_3">Subject 3</label>
+        <input id="subject_3" class="input-field" type="text">
+        <label for="c_hours3">Credit Hours</label>
+        <input id="c_hours3" class="input-field">
+        <label for="obtained_subj3">Obtained Marks</label>
+        <input id="obtained_subj3" class="input-field"><br>
+
+        <label for="subject_4">Subject 4</label>
+        <input id="subject_4" class="input-field" type="text">
+        <label for="c_hours4">Credit Hours</label>
+        <input id="c_hours4" class="input-field">
+        <label for="obtained_subj4">Obtained Marks</label>
+        <input id="obtained_subj4" class="input-field"><br>
+
+        <label for="subject_5">Subject 5</label>
+        <input id="subject_5" class="input-field" type="text">
+        <label for="c_hours5">Credit Hours</label>
+        <input id="c_hours5" class="input-field">
+        <label for="obtained_subj5">Obtained Marks</label>
+        <input id="obtained_subj5" class="input-field"><br>
+
+        <label for="subject_6">Subject 6</label>
+        <input id="subject_6" class="input-field" type="text">
+        <label for="c_hours6">Credit Hours</label>
+        <input id="c_hours6" class="input-field">
+        <label for="obtained_subj6">Obtained Marks</label>
+        <input id="obtained_subj6" class="input-field"><br>
+
+        <button id="btn_calculate">CALCULATE</button>
+        <p id="gpa">GPA: 0.00</p>
+      </div>
+
+      <div class="text">
+        <p>Grade Calculation:</p>
+        <ul>
+          <li><pre>A   : 80-100</pre></li>
+          <li><pre>B+  : 75-79</pre></li>
+          <li><pre>B   : 70-74</pre></li>
+          <li><pre>C+  : 65-69</pre></li>
+          <li><pre>C   : 55-64</pre></li>
+          <li><pre>D   : 50-54</pre></li>
+          <li><pre>F   : 0-49</pre></li>
+        </ul>
+      </div>
+    
+
+      <footer>
+        <div class="divider">
+          <hr>
+        </div>
+        <div class="footer-text">
+          <p>made by</p>
+          <p>Shayan Ahmed Khan</p>
+        </div>
+      </footer>
+    </div>
 
     <script src="main.js"></script>
   </body>
