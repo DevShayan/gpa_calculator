@@ -1,16 +1,21 @@
 :root {
-    --accent-color: lightgreen;
+    --accent-color: blueviolet;
 }
 
 .input-field {
     height: 2em;
     margin: 8px;
     outline-style: none;
+    position: relative;
 }
 
 .input-field:focus {
-    border-color: var(--accent-color);
-    border-style: solid;
+    border: 2px solid var(--accent-color);
+}
+
+.red-border,
+.red-border:focus {
+    border: 2px solid red;
 }
 
 button {
@@ -18,11 +23,12 @@ button {
     padding: 10px;
     border-radius: 100px;
     border-style: none;
+    color: white;
     background-color: var(--accent-color);
 }
 
 button:hover {
-    background-color: rgb(117, 212, 117);
+    background-color: rgb(168, 90, 240);
 }
 
 p {
