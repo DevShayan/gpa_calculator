@@ -1,10 +1,3 @@
-const subject1 = document.getElementById("subject_1");
-const subject2 = document.getElementById("subject_2");
-const subject3 = document.getElementById("subject_3");
-const subject4 = document.getElementById("subject_4");
-const subject5 = document.getElementById("subject_5");
-const subject6 = document.getElementById("subject_6");
-
 const creditHours1 = document.getElementById("c_hours1");
 const creditHours2 = document.getElementById("c_hours2");
 const creditHours3 = document.getElementById("c_hours3");
@@ -171,6 +164,12 @@ function validateInput() {
         obtainedMarks.push(parseInt(obtainedMarks5.value));
     if (obtainedMarks6.value.trim().length !== 0)
         obtainedMarks.push(parseInt(obtainedMarks6.value));
+
+    if (obtainedMarks.length == 0 && creditHours.length == 0) {
+        obtainedMarks1.setCustomValidity("Atleast one input is required!");
+        obtainedMarks1.reportValidity();
+        return false;
+    }
 
     return true;
 

@@ -1,5 +1,6 @@
 :root {
     --accent-color: blueviolet;
+    --accent-color-light: rgb(173, 115, 228);
 }
 
 .input-field {
@@ -20,15 +21,21 @@
 
 button {
     margin: 20px;
-    padding: 10px;
+    padding: 10px 15px 10px 15px;
     border-radius: 100px;
     border-style: none;
     color: white;
     background-color: var(--accent-color);
+    cursor: pointer;
+    transition-duration: 0.1s;
 }
 
 button:hover {
-    background-color: rgb(168, 90, 240);
+    background-color: var(--accent-color-light);
+}
+
+button:active {
+    transform: scale(95%);
 }
 
 p {
@@ -74,4 +81,16 @@ pre {
 #gpa {
     font-size: x-large;
     font-family: sans-serif;
+}
+
+@media (max-width: 750px) {
+    .card {
+        width: auto;
+        padding: 30px;
+        margin: auto;
+        border: 2px solid lightgray;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+    }
 }
