@@ -1,13 +1,14 @@
 :root {
     --accent-color: blueviolet;
     --accent-color-light: rgb(173, 115, 228);
+    font-family: Arial, sans-serif;
 }
 
 .input-field {
     height: 2em;
-    margin: 8px;
     outline-style: none;
     position: relative;
+    width: 50px;
 }
 
 .input-field:focus {
@@ -46,14 +47,6 @@ p {
     text-align: center;
 }
 
-.card {
-    width: max-content;
-    padding: 30px;
-    margin: auto;
-    border: 2px solid lightgray;
-    border-radius: 10px;
-}
-
 body {
     background-color: #fbfbfb;
 }
@@ -78,19 +71,83 @@ pre {
     font-family: inherit;
 }
 
-#gpa {
+.gpa {
     font-size: x-large;
-    font-family: sans-serif;
+    margin: 30px 10px 20px 0px;
 }
 
-@media (max-width: 750px) {
+.cards-container {
+    width: 100%;
+    margin: auto;
+    /* background-color: red; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th {
+    border-bottom: 1px solid black;
+    border-width: 2px;
+}
+
+td {
+    width: 2000px;
+}
+
+td:first-child,
+th:first-child {
+    text-align: left;
+}
+
+#semester_h {
+    display: flex;
+    align-self: flex-start;
+    padding-bottom: 20px;
+}
+
+.card {
+    width: 400px;
+    padding: 10px 30px 10px 30px;
+    margin: 20px;
+    border: 2px solid lightgray;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#gpa_card {
+    align-items: start;
+}
+
+#null_card {
+    width: 500px;
+    height: 1px;
+}
+
+@media (max-width: 400px) {
     .card {
         width: auto;
+    }
+
+    .cards-container {
+        width: auto;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    #null_card {
+        width: 5px;
+        height: 5px;
         padding: 30px;
-        margin: auto;
-        border: 2px solid lightgray;
-        border-radius: 10px;
-        display: flex;
-        flex-direction: column;
+        margin: 20px;
+        background-color: red;
     }
 }

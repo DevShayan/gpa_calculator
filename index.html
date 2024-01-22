@@ -11,13 +11,433 @@
   <body>
 
     <div class="content">
-      <h1>GPA Calculator</h1>
+      <h1>GPA Calculator for FUUAST</h1>
 
-      <div class="card">
+      <div class="cards-container">
+        <div class="card" id="gpa_card">
+          <p id="gpa_cgpa" class="gpa">CGPA: -</p>
+        </div>
+
+        <div id="null_card">
+        </div>
+
+        <div class="card">
+          <h3 id="semester_h">Semester 1</h3>
+          <table class="table1">
+            <tr>
+              <th><Label>Subjects</Label></th>
+              <th><Label>Cr. Hrs.</Label></th>
+              <th><Label>Grade</Label></th>
+              <th><Label>GP</Label></th>
+              <th><Label>Marks</Label></th>
+            </tr>
+            <tr><td>‎ </td></tr>
+            <tr>
+              <td><Label>PF</Label></td>
+              <td><Label id="c_hours_pf">-</Label></td>
+              <td><Label id="grade_pf">-</Label></td>
+              <td><Label id="gp_pf">-</Label></td>
+              <td><input id="marks_pf" class="input-field"></td>
+            </tr>
+            <tr>
+              <td><Label>ICT</Label></td>
+              <td><Label id="c_hours_ict">-</Label></td>
+              <td><Label id="grade_ict">-</Label></td>
+              <td><Label id="gp_ict">-</Label></td>
+              <td><input id="marks_ict" class="input-field"></td>
+            </tr>
+            <tr>
+              <td><Label>Calc. 1</Label></td>
+              <td><Label id="c_hours_cal1">-</Label></td>
+              <td><Label id="grade_cal1">-</Label></td>
+              <td><Label id="gp_cal1">-</Label></td>
+              <td><input id="marks_cal1" class="input-field"></td>
+            </tr>
+            <tr>
+              <td><Label>App. Physics</Label></td>
+              <td><Label id="c_hours_app_ph">-</Label></td>
+              <td><Label id="grade_app_ph">-</Label></td>
+              <td><Label id="gp_app_ph">-</Label></td>
+              <td><input id="marks_app_ph" class="input-field"></td>
+            </tr>
+            <tr>
+              <td><Label>ECC</Label></td>
+              <td><Label id="c_hours_ecc">-</Label></td>
+              <td><Label id="grade_ecc">-</Label></td>
+              <td><Label id="gp_ecc">-</Label></td>
+              <td><input id="marks_ecc" class="input-field"></td>
+            </tr>
+            <tr>
+              <td><Label>Isl.</Label></td>
+              <td><Label id="c_hours_isl">-</Label></td>
+              <td><Label id="grade_isl">-</Label></td>
+              <td><Label id="gp_isl">-</Label></td>
+              <td><input id="marks_isl" class="input-field"></td>
+            </tr>
+          </table>
+
+          <!-- <button id="btn_calculate">CALCULATE</button> -->
+          <p id="gpa_1" class="gpa">GPA: -</p>
+        </div>
+
+        <div class="card">
+          <h3 id="semester_h">Semester 2</h3>
+          <table class="table1">
+            <tr>
+              <th><Label>Subjects</Label></th>
+              <th><Label>Cr. Hrs.</Label></th>
+              <th><Label>Grade</Label></th>
+              <th><Label>GP</Label></th>
+              <th><Label>Marks</Label></th>
+            </tr>
+            <tr><td>‎ </td></tr>
+            <tr>
+              <td><Label>OOP</Label></td>
+              <td><Label id="c_hours_oop">-</Label></td>
+              <td><Label id="grade_oop">-</Label></td>
+              <td><Label id="gp_oop">-</Label></td>
+              <td><input id="marks_oop" class="input-field"></td>
+            </tr>
+            <tr>
+              <td><Label>DLD</Label></td>
+              <td><Label id="c_hours_dld">-</Label></td>
+              <td><Label id="grade_dld">-</Label></td>
+              <td><Label id="gp_dld">-</Label></td>
+              <td><input id="marks_dld" class="input-field"></td>
+            </tr>
+            <tr>
+              <td><Label>P&S</Label></td>
+              <td><Label id="c_hours_ps">-</Label></td>
+              <td><Label id="grade_ps">-</Label></td>
+              <td><Label id="gp_ps">-</Label></td>
+              <td><input id="marks_ps" class="input-field"></td>
+            </tr>
+            <tr>
+              <td><Label>Urdu</Label></td>
+              <td><Label id="c_hours_ur">-</Label></td>
+              <td><Label id="grade_ur">-</Label></td>
+              <td><Label id="gp_ur">-</Label></td>
+              <td><input id="marks_ur" class="input-field"></td>
+            </tr>
+            <tr>
+              <td><Label>CPS</Label></td>
+              <td><Label id="c_hours_cps">-</Label></td>
+              <td><Label id="grade_cps">-</Label></td>
+              <td><Label id="gp_cps">-</Label></td>
+              <td><input id="marks_cps" class="input-field"></td>
+            </tr>
+            <tr>
+              <td><Label>Pak. St.</Label></td>
+              <td><Label id="c_hours_pak_st">-</Label></td>
+              <td><Label id="grade_pak_st">-</Label></td>
+              <td><Label id="gp_pak_st">-</Label></td>
+              <td><input id="marks_pak_st" class="input-field"></td>
+            </tr>
+          </table>
+          <p id="gpa_2" class="gpa">GPA: -</p>
+        </div>
+
+        <div class="card">
+          <h3 id="semester_h">Semester 3</h3>
+          <table class="table1">
+            <tr>
+              <th><Label>Subjects</Label></th>
+              <th><Label>Cr. Hrs.</Label></th>
+              <th><Label>Grade</Label></th>
+              <th><Label>GP</Label></th>
+              <th><Label>Marks</Label></th>
+            </tr>
+            <tr><td>‎ </td></tr>
+            <tr>
+              <td><Label>DSA</Label></td>
+              <td><Label id="c_hours_dsa">-</Label></td>
+              <td><Label id="grade_dsa">-</Label></td>
+              <td><Label id="gp_dsa">-</Label></td>
+              <td><input id="marks_dsa" class="input-field"></td>
+            </tr>
+            <tr>
+              <td><Label>COAL</Label></td>
+              <td><Label id="c_hours_coal">-</Label></td>
+              <td><Label id="grade_coal">-</Label></td>
+              <td><Label id="gp_coal">-</Label></td>
+              <td><input id="marks_coal" class="input-field"></td>
+            </tr>
+            <tr>
+              <td><Label>Diff. Eqs.</Label></td>
+              <td><Label id="c_hours_diff_eq">-</Label></td>
+              <td><Label id="grade_diff_eq">-</Label></td>
+              <td><Label id="gp_diff_eq">-</Label></td>
+              <td><input id="marks_diff_eq" class="input-field"></td>
+            </tr>
+            <tr>
+              <td><Label>Disc. Struct.</Label></td>
+              <td><Label id="c_hours_dsc_st">-</Label></td>
+              <td><Label id="grade_dsc_st">-</Label></td>
+              <td><Label id="gp_dsc_st">-</Label></td>
+              <td><input id="marks_dsc_st" class="input-field"></td>
+            </tr>
+            <tr>
+              <td><Label>TBW</Label></td>
+              <td><Label id="c_hours_tbw">-</Label></td>
+              <td><Label id="grade_tbw">-</Label></td>
+              <td><Label id="gp_tbw">-</Label></td>
+              <td><input id="marks_tbw" class="input-field"></td>
+            </tr>
+          </table>
+          <p id="gpa_3" class="gpa">GPA: -</p>
+        </div>
+
+        <div class="card">
+          <h3 id="semester_h">Semester 4</h3>
+          <table class="table1">
+            <tr>
+              <th><Label>Subjects</Label></th>
+              <th><Label>Cr. Hrs.</Label></th>
+              <th><Label>Grade</Label></th>
+              <th><Label>GP</Label></th>
+              <th><Label>Marks</Label></th>
+            </tr>
+            <tr><td>‎ </td></tr>
+            <tr>
+              <td><Label>DBMS</Label></td>
+              <td><Label id="c_hours_dbms">-</Label></td>
+              <td><Label id="grade_dbms">-</Label></td>
+              <td><Label id="gp_dbms">-</Label></td>
+              <td><input id="marks_dbms" class="input-field"></td>
+            </tr>
+            <tr>
+              <td><Label>VP</Label></td>
+              <td><Label id="c_hours_vp">-</Label></td>
+              <td><Label id="grade_vp">-</Label></td>
+              <td><Label id="gp_vp">-</Label></td>
+              <td><input id="marks_vp" class="input-field"></td>
+            </tr>
+            <tr>
+              <td><Label>LA</Label></td>
+              <td><Label id="c_hours_la">-</Label></td>
+              <td><Label id="grade_la">-</Label></td>
+              <td><Label id="gp_la">-</Label></td>
+              <td><input id="marks_la" class="input-field"></td>
+            </tr>
+            <tr>
+              <td><Label>DAoA</Label></td>
+              <td><Label id="c_hours_daoa">-</Label></td>
+              <td><Label id="grade_daoa">-</Label></td>
+              <td><Label id="gp_daoa">-</Label></td>
+              <td><input id="marks_daoa" class="input-field"></td>
+            </tr>
+            <tr>
+              <td><Label>TOA</Label></td>
+              <td><Label id="c_hours_toa">-</Label></td>
+              <td><Label id="grade_toa">-</Label></td>
+              <td><Label id="gp_toa">-</Label></td>
+              <td><input id="marks_toa" class="input-field"></td>
+            </tr>
+          </table>
+          <p id="gpa_4" class="gpa">GPA: -</p>
+        </div>
+
+        <div class="card">
+          <h3 id="semester_h">Semester 5</h3>
+          <table class="table1">
+            <tr>
+              <th><Label>Subjects</Label></th>
+              <th><Label>Cr. Hrs.</Label></th>
+              <th><Label>Grade</Label></th>
+              <th><Label>GP</Label></th>
+              <th><Label>Marks</Label></th>
+            </tr>
+            <tr><td>‎ </td></tr>
+            <tr>
+              <td><Label>PF</Label></td>
+              <td><Label id="c_hours_">-</Label></td>
+              <td><Label id="grade_">-</Label></td>
+              <td><Label id="gp_">-</Label></td>
+              <td><input id="marks_" class="input-field"></td>
+            </tr>
+            <tr>
+              <td><Label>ICT</Label></td>
+              <td><Label id="c_hours_">-</Label></td>
+              <td><Label id="grade_">-</Label></td>
+              <td><Label id="gp_">-</Label></td>
+              <td><input id="marks_" class="input-field"></td>
+            </tr>
+            <tr>
+              <td><Label>Calc. 1</Label></td>
+              <td><Label id="c_hours_">-</Label></td>
+              <td><Label id="grade_">-</Label></td>
+              <td><Label id="gp_">-</Label></td>
+              <td><input id="marks_" class="input-field"></td>
+            </tr>
+            <tr>
+              <td><Label>App. Physics</Label></td>
+              <td><Label id="c_hours_">-</Label></td>
+              <td><Label id="grade_">-</Label></td>
+              <td><Label id="gp_">-</Label></td>
+              <td><input id="marks_" class="input-field"></td>
+            </tr>
+            <tr>
+              <td><Label>ECC</Label></td>
+              <td><Label id="c_hours_">-</Label></td>
+              <td><Label id="grade_">-</Label></td>
+              <td><Label id="gp_">-</Label></td>
+              <td><input id="marks_" class="input-field"></td>
+            </tr>
+          </table>
+          <p id="gpa_5" class="gpa">GPA: -</p>
+        </div>
+
+        <div class="card">
+          <h3 id="semester_h">Semester 6</h3>
+          <table class="table1">
+            <tr>
+              <th><Label>Subjects</Label></th>
+              <th><Label>Cr. Hrs.</Label></th>
+              <th><Label>Grade</Label></th>
+              <th><Label>GP</Label></th>
+              <th><Label>Marks</Label></th>
+            </tr>
+            <tr><td>‎ </td></tr>
+            <tr>
+              <td><Label>AI</Label></td>
+              <td><Label id="c_hours_ai">-</Label></td>
+              <td><Label id="grade_ai">-</Label></td>
+              <td><Label id="gp_ai">-</Label></td>
+              <td><input id="marks_ai" class="input-field"></td>
+            </tr>
+            <tr>
+              <td><Label>CC</Label></td>
+              <td><Label id="c_hours_cc">-</Label></td>
+              <td><Label id="grade_cc">-</Label></td>
+              <td><Label id="gp_cc">-</Label></td>
+              <td><input id="marks_cc" class="input-field"></td>
+            </tr>
+            <tr>
+              <td><Label>NSC</Label></td>
+              <td><Label id="c_hours_nsc">-</Label></td>
+              <td><Label id="grade_nsc">-</Label></td>
+              <td><Label id="gp_nsc">-</Label></td>
+              <td><input id="marks_nsc" class="input-field"></td>
+            </tr>
+            <tr>
+              <td><Label>OOSE</Label></td>
+              <td><Label id="c_hours_oose">-</Label></td>
+              <td><Label id="grade_oose">-</Label></td>
+              <td><Label id="gp_oose">-</Label></td>
+              <td><input id="marks_oose" class="input-field"></td>
+            </tr>
+            <tr>
+              <td><Label>WP</Label></td>
+              <td><Label id="c_hours_wp">-</Label></td>
+              <td><Label id="grade_wp">-</Label></td>
+              <td><Label id="gp_wp">-</Label></td>
+              <td><input id="marks_wp" class="input-field"></td>
+            </tr>
+          </table>
+          <p id="gpa_6" class="gpa">GPA: -</p>
+        </div>
+
+        <div class="card">
+          <h3 id="semester_h">Semester 7</h3>
+          <table class="table1">
+            <tr>
+              <th><Label>Subjects</Label></th>
+              <th><Label>Cr. Hrs.</Label></th>
+              <th><Label>Grade</Label></th>
+              <th><Label>GP</Label></th>
+              <th><Label>Marks</Label></th>
+            </tr>
+            <tr><td>‎ </td></tr>
+            <tr>
+              <td><Label>DSc</Label></td>
+              <td><Label id="c_hours_dsc">-</Label></td>
+              <td><Label id="grade_dsc">-</Label></td>
+              <td><Label id="gp_dsc">-</Label></td>
+              <td><input id="marks_dsc" class="input-field"></td>
+            </tr>
+            <tr>
+              <td><Label>Adv. Prog.</Label></td>
+              <td><Label id="c_hours_ap">-</Label></td>
+              <td><Label id="grade_ap">-</Label></td>
+              <td><Label id="gp_ap">-</Label></td>
+              <td><input id="marks_ap" class="input-field"></td>
+            </tr>
+            <tr>
+              <td><Label>WP2</Label></td>
+              <td><Label id="c_hours_wp2">-</Label></td>
+              <td><Label id="grade_wp2">-</Label></td>
+              <td><Label id="gp_wp2">-</Label></td>
+              <td><input id="marks_wp2" class="input-field"></td>
+            </tr>
+            <tr>
+              <td><Label>HCI</Label></td>
+              <td><Label id="c_hours_hci">-</Label></td>
+              <td><Label id="grade_hci">-</Label></td>
+              <td><Label id="gp_hci">-</Label></td>
+              <td><input id="marks_hci" class="input-field"></td>
+            </tr>
+            <tr>
+              <td><Label>PDC</Label></td>
+              <td><Label id="c_hours_pdc">-</Label></td>
+              <td><Label id="grade_pdc">-</Label></td>
+              <td><Label id="gp_pdc">-</Label></td>
+              <td><input id="marks_pdc" class="input-field"></td>
+            </tr>
+            <tr>
+              <td><Label>FYP 1</Label></td>
+              <td><Label id="c_hours_fyp1">-</Label></td>
+              <td><Label id="grade_fyp1">-</Label></td>
+              <td><Label id="gp_fyp1">-</Label></td>
+              <td><input id="marks_fyp1" class="input-field"></td>
+            </tr>
+          </table>
+          <p id="gpa_7" class="gpa">GPA: -</p>
+        </div>
+
+        <div class="card">
+          <h3 id="semester_h">Semester 8</h3>
+          <table class="table1">
+            <tr>
+              <th><Label>Subjects</Label></th>
+              <th><Label>Cr. Hrs.</Label></th>
+              <th><Label>Grade</Label></th>
+              <th><Label>GP</Label></th>
+              <th><Label>Marks</Label></th>
+            </tr>
+            <tr><td>‎ </td></tr>
+            <tr>
+              <td><Label>MMT</Label></td>
+              <td><Label id="c_hours_mt">-</Label></td>
+              <td><Label id="grade_mt">-</Label></td>
+              <td><Label id="gp_mt">-</Label></td>
+              <td><input id="marks_mt" class="input-field"></td>
+            </tr>
+            <tr>
+              <td><Label>SDA</Label></td>
+              <td><Label id="c_hours_sda">-</Label></td>
+              <td><Label id="grade_sda">-</Label></td>
+              <td><Label id="gp_sda">-</Label></td>
+              <td><input id="marks_sda" class="input-field"></td>
+            </tr>
+            <tr>
+              <td><Label>FYP 2</Label></td>
+              <td><Label id="c_hours_fyp2">-</Label></td>
+              <td><Label id="grade_fyp2">-</Label></td>
+              <td><Label id="gp_fyp2">-</Label></td>
+              <td><input id="marks_fyp2" class="input-field"></td>
+            </tr>
+          </table>
+          <p id="gpa_8" class="gpa">GPA: -</p>
+        </div>
+      </div>
+
+      <!-- ---------------------------------------------------------------- -->
+
+      <!-- <div class="card">
 
         <input id="subject_1" class="input-field" type="text" placeholder="Subject 1">
-        <input id="c_hours1" class="input-field" placeholder="Credit Hours">
-        <input id="obtained_subj1" class="input-field" placeholder="Marks"><br>
+        <input id="c_hours_" class="input-field" placeholder="Credit Hours">
+        <input id="marks_" class="input-field" placeholder="Marks"><br>
 
         <input id="subject_2" class="input-field" type="text" placeholder="Subject 2">
         <input id="c_hours2" class="input-field" placeholder="Credit Hours">
@@ -40,34 +460,23 @@
         <input id="obtained_subj6" class="input-field" placeholder="Marks"><br>
 
         <button id="btn_calculate">CALCULATE</button>
-        <p id="gpa">GPA: 0.00</p>
-      </div>
+        <p id="gpa_">GPA: -</p>
+      </div> -->
 
-      <div class="text">
-        <p>Grade Calculation:</p>
-        <ul>
-          <li><pre>A:  80-100</pre></li>
-          <li><pre>B+: 75-79</pre></li>
-          <li><pre>B:  70-74</pre></li>
-          <li><pre>C+: 65-69</pre></li>
-          <li><pre>C:  55-64</pre></li>
-          <li><pre>D:  50-54</pre></li>
-          <li><pre>F:  0-49</pre></li>
-        </ul>
-      </div>
+      <!-- ---------------------------------------------------------------- -->
     
-
       <footer>
         <div class="divider">
           <hr>
         </div>
         <div class="footer-text">
           <p>made by</p>
-          <p>Shayan Ahmad Khan</p>
+          <p>Shayan Ahmed Khan</p>
         </div>
       </footer>
     </div>
 
+    <script src="jquery.js"></script>
     <script src="main.js"></script>
   </body>
 </html>
