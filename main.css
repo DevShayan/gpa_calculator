@@ -20,25 +20,6 @@
     border: 2px solid red;
 }
 
-button {
-    margin: 20px;
-    padding: 10px 15px 10px 15px;
-    border-radius: 100px;
-    border-style: none;
-    color: white;
-    background-color: var(--accent-color);
-    cursor: pointer;
-    transition-duration: 0.1s;
-}
-
-button:hover {
-    background-color: var(--accent-color-light);
-}
-
-button:active {
-    transform: scale(95%);
-}
-
 p {
     margin: 8px;
 }
@@ -131,23 +112,7 @@ th:first-child {
 }
 
 @media (max-width: 400px) {
-    .card {
-        width: auto;
-    }
-
     .cards-container {
         width: auto;
-    }
-
-    button {
-        width: 100%;
-    }
-
-    #null_card {
-        width: 5px;
-        height: 5px;
-        padding: 30px;
-        margin: 20px;
-        background-color: red;
     }
 }
