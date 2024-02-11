@@ -35,11 +35,11 @@ const creditHrs4 = new Map([
 ]);
 
 const creditHrs5 = new Map([
-    ["pf", 4],
-    ["ict", 4],
-    ["cal1", 3],
-    ["app_ph", 3],
-    ["isl", 2]
+    ["ccn", 4],
+    ["os", 4],
+    ["cal2", 3],
+    ["ise", 3],
+    ["dm", 3]
 ]);
 
 const creditHrs6 = new Map([
@@ -127,11 +127,11 @@ function setCreditHours() {
     $("#c_hours_daoa").text(creditHrs4.get("daoa"));
     $("#c_hours_toa").text(creditHrs4.get("toa"));
 
-    $("#c_hours_pf").text(creditHrs5.get("pf"));
-    $("#c_hours_ict").text(creditHrs5.get("ict"));
-    $("#c_hours_cal1").text(creditHrs5.get("cal1"));
-    $("#c_hours_app_ph").text(creditHrs5.get("app_ph"));
-    $("#c_hours_ecc").text(creditHrs5.get("ecc"));
+    $("#c_hours_ccn").text(creditHrs5.get("ccn"));
+    $("#c_hours_os").text(creditHrs5.get("os"));
+    $("#c_hours_cal2").text(creditHrs5.get("cal2"));
+    $("#c_hours_ise").text(creditHrs5.get("ise"));
+    $("#c_hours_dm").text(creditHrs5.get("dm"));
 
     $("#c_hours_ai").text(creditHrs6.get("ai"));
     $("#c_hours_cc").text(creditHrs6.get("cc"));
@@ -207,11 +207,11 @@ function getQGradesForSem(semester) {
             (creditHrs4.get("daoa")*$("#gp_daoa").text()) +
             (creditHrs4.get("toa")*$("#gp_toa").text());
         case 5:
-            return (creditHrs5.get("pf")*$("#gp_pf").text()) +
-            (creditHrs5.get("ict")*$("#gp_ict").text()) +
-            (creditHrs5.get("cal1")*$("#gp_cal1").text()) +
-            (creditHrs5.get("app_ph")*$("#gp_app_ph").text()) +
-            (creditHrs5.get("ecc")*$("#gp_ecc").text());
+            return (creditHrs5.get("ccn")*$("#gp_ccn").text()) +
+            (creditHrs5.get("os")*$("#gp_os").text()) +
+            (creditHrs5.get("cal2")*$("#gp_cal2").text()) +
+            (creditHrs5.get("ise")*$("#gp_ise").text()) +
+            (creditHrs5.get("dm")*$("#gp_dm").text());
         case 6:
             return (creditHrs6.get("ai")*$("#gp_ai").text()) +
             (creditHrs6.get("cc")*$("#gp_cc").text()) +
@@ -281,21 +281,19 @@ function listenerSem(subject, semester) {
         $(semester_gpa).text(`GPA: ${gpa}`);
 
         // cgpa
-        if ($(semester_gpa).text() != "GPA: -") {
-            var sumOfQGrades = 0;
-            var sumOfCHrs = 0;
+        var sumOfQGrades = 0;
+        var sumOfCHrs = 0;
 
-            for (var x=1; x<=8; x++) {
-                var gpa_sem = `#gpa_${x}`;
+        for (var x=1; x<=8; x++) {
+            var gpa_sem = `#gpa_${x}`;
 
-                if ($(gpa_sem).text() != "GPA: -") {
-                    sumOfQGrades += getQGradesForSem(x);
-                    sumOfCHrs += getTotalCHrsForSem(x);
-                }
+            if ($(gpa_sem).text() != "GPA: -") {
+                sumOfQGrades += getQGradesForSem(x);
+                sumOfCHrs += getTotalCHrsForSem(x);
             }
-
-            $("#gpa_cgpa").text(`CGPA: ${(sumOfQGrades/sumOfCHrs).toFixed(2)}`);
         }
+        console.log(sumOfQGrades + " " + sumOfCHrs);
+        $("#gpa_cgpa").text(`CGPA: ${(sumOfQGrades/sumOfCHrs).toFixed(2)}`);
 
     });
 }
