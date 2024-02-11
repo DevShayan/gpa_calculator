@@ -1,23 +1,38 @@
 :root {
-    --accent-color: blueviolet;
-    --accent-color-light: rgb(173, 115, 228);
     font-family: Arial, sans-serif;
+    --accent-color: blueviolet;
+    --accent-color-light: #ad73e4;
+    /* card */
+    --background-color: #f7f2fa;
+    --card-border-color: #cac4d0;
+    --card-bg-color: #fffbfe;
+    /* input */
+    --input-border-color: #79747e;
+    --input-border-focus-color: #6750A4;
+}
+
+body {
+    background-color: var(--background-color);
 }
 
 .input-field {
     height: 2em;
-    outline-style: none;
     position: relative;
     width: 50px;
+    border: 0;
+    outline: 1px solid var(--input-border-color);
+    margin: 2px;
+    border-radius: 2px;
+    background-color: transparent;
 }
 
 .input-field:focus {
-    border: 2px solid var(--accent-color);
+    outline: 2px solid var(--input-border-focus-color);
 }
 
 .red-border,
 .red-border:focus {
-    border: 2px solid red;
+    border: 2px solid var(--accent-color);
 }
 
 p {
@@ -28,15 +43,11 @@ p {
     text-align: center;
 }
 
-body {
-    background-color: #fbfbfb;
-}
-
 hr {
     height: 1px;
     margin: 50px 50px 50px 50px;
     border: none;
-    border-top: 1px solid lightgray;
+    border-top: 1px solid var(--card-border-color);
 }
 
 .text {
@@ -60,7 +71,6 @@ pre {
 .cards-container {
     width: 100%;
     margin: auto;
-    /* background-color: red; */
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -72,7 +82,7 @@ table {
 }
 
 th {
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid;
     border-width: 2px;
 }
 
@@ -95,11 +105,12 @@ th:first-child {
     width: 400px;
     padding: 10px 30px 10px 30px;
     margin: 20px;
-    border: 2px solid lightgray;
+    border: 1px solid var(--card-border-color);
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: var(--card-bg-color);
 }
 
 #gpa_card {
@@ -114,5 +125,21 @@ th:first-child {
 @media (max-width: 400px) {
     .cards-container {
         width: auto;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background-color: #25232A;
+        --card-border-color: #49454F;
+        --card-bg-color: #1C1B1F;
+        color: #e4e4e4;
+        /* input */
+        --input-border-color: #938F99;
+        --input-border-focus-color: #D0BCFF;
+    }
+
+    .input-field {
+        color: whitesmoke;
     }
 }
