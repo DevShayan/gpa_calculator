@@ -31,7 +31,7 @@ const creditHrs4 = new Map([
     ["vp", 3],
     ["la", 3],
     ["daoa", 3],
-    ["toa", 2]
+    ["toa", 3]
 ]);
 
 const creditHrs5 = new Map([
