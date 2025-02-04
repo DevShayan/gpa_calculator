@@ -93,6 +93,7 @@ var qGrades8 = 0;
 function main() {
     init();
     semListeners();
+    autofillMarks();
 }
 
 function init() {
@@ -332,4 +333,57 @@ function getGPFromMarks(marks) {
     if (marks >= 55) return 2.0;
     if (marks >= 50) return 1.5;
     return 0;
+}
+
+function autofillMarks() {
+    $("#autofill_card").click(() => {
+        $("#marks_pf").val("94").trigger("input");
+        $("#marks_ict").val("78").trigger("input");
+        $("#marks_cal1").val("74").trigger("input");
+        $("#marks_app_ph").val("82").trigger("input");
+        $("#marks_ecc").val("70").trigger("input");
+        $("#marks_isl").val("91").trigger("input");
+
+        $("#marks_oop").val("83").trigger("input");
+        $("#marks_dld").val("81").trigger("input");
+        $("#marks_ps").val("80").trigger("input");
+        $("#marks_ur").val("65").trigger("input");
+        $("#marks_cps").val("91").trigger("input");
+        $("#marks_pak_st").val("65").trigger("input");
+
+        $("#marks_dsa").val("81").trigger("input");
+        $("#marks_coal").val("82").trigger("input");
+        $("#marks_diff_eq").val("70").trigger("input");
+        $("#marks_dsc_st").val("81").trigger("input");
+        $("#marks_tbw").val("80").trigger("input");
+
+        $("#marks_dbms").val("68").trigger("input");
+        $("#marks_vp").val("80").trigger("input");
+        $("#marks_la").val("87").trigger("input");
+        $("#marks_daoa").val("72").trigger("input");
+        $("#marks_toa").val("65").trigger("input");
+
+        $("#marks_ccn").val("66").trigger("input");
+        $("#marks_os").val("81").trigger("input");
+        $("#marks_cal2").val("82").trigger("input");
+        $("#marks_ise").val("49").trigger("input");
+        $("#marks_dm").val("59").trigger("input");
+
+        $("#marks_ai").val("49").trigger("input");
+        $("#marks_cc").val("49").trigger("input");
+        $("#marks_nsc").val("49").trigger("input");
+        $("#marks_oose").val("50").trigger("input");
+        $("#marks_wp").val("84").trigger("input");
+
+        // $("#marks_dsc").val("50").trigger("input");
+        // $("#marks_ap").val("50").trigger("input");
+        // $("#marks_wp2").val("50").trigger("input");
+        // $("#marks_hci").val("50").trigger("input");
+        // $("#marks_pdc").val("50").trigger("input");
+        // $("#marks_fyp1").val("50").trigger("input");
+
+        // $("#marks_mt").val("50").trigger("input");
+        // $("#marks_sda").val("50").trigger("input");
+        // $("#marks_fyp2").val("50").trigger("input");
+    });
 }

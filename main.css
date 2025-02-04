@@ -117,9 +117,14 @@ th:first-child {
     align-items: start;
 }
 
-#null_card {
-    width: 500px;
-    height: 1px;
+#autofill_card {
+    background-color: #49454F;
+    cursor: pointer;
+}
+
+#autofill-text {
+    font-size: x-large;
+    margin: 30px 10px 20px 0px;
 }
 
 @media (max-width: 400px) {
