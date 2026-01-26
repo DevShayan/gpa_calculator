@@ -53,7 +53,6 @@ const creditHrs6 = new Map([
 const creditHrs7 = new Map([
     ["dsc", 3],
     ["ap", 3],
-    ["wp2", 3],
     ["hci", 3],
     ["pdc", 3],
     ["fyp1", 3]
@@ -142,7 +141,6 @@ function setCreditHours() {
 
     $("#c_hours_dsc").text(creditHrs7.get("dsc"));
     $("#c_hours_ap").text(creditHrs7.get("ap"));
-    $("#c_hours_wp2").text(creditHrs7.get("wp2"));
     $("#c_hours_hci").text(creditHrs7.get("hci"));
     $("#c_hours_pdc").text(creditHrs7.get("pdc"));
     $("#c_hours_fyp1").text(creditHrs7.get("fyp1"));
@@ -222,7 +220,6 @@ function getQGradesForSem(semester) {
         case 7:
             return (creditHrs7.get("dsc")*$("#gp_dsc").text()) +
             (creditHrs7.get("ap")*$("#gp_ap").text()) +
-            (creditHrs7.get("wp2")*$("#gp_wp2").text()) +
             (creditHrs7.get("hci")*$("#gp_hci").text()) +
             (creditHrs7.get("pdc")*$("#gp_pdc").text()) +
             (creditHrs7.get("fyp1")*$("#gp_fyp1").text());
@@ -366,21 +363,20 @@ function autofillMarks() {
         $("#marks_ccn").val("66").trigger("input");
         $("#marks_os").val("81").trigger("input");
         $("#marks_cal2").val("82").trigger("input");
-        $("#marks_ise").val("49").trigger("input");
+        $("#marks_ise").val("50").trigger("input");
         $("#marks_dm").val("59").trigger("input");
 
-        $("#marks_ai").val("49").trigger("input");
-        $("#marks_cc").val("49").trigger("input");
-        $("#marks_nsc").val("49").trigger("input");
+        $("#marks_ai").val("50").trigger("input");
+        $("#marks_cc").val("50").trigger("input");
+        $("#marks_nsc").val("50").trigger("input");
         $("#marks_oose").val("75").trigger("input");
         $("#marks_wp").val("84").trigger("input");
 
-        // $("#marks_dsc").val("50").trigger("input");
-        // $("#marks_ap").val("50").trigger("input");
-        // $("#marks_wp2").val("50").trigger("input");
-        // $("#marks_hci").val("50").trigger("input");
-        // $("#marks_pdc").val("50").trigger("input");
-        // $("#marks_fyp1").val("50").trigger("input");
+        $("#marks_dsc").val("49").trigger("input");
+        $("#marks_ap").val("49").trigger("input");
+        $("#marks_hci").val("49").trigger("input");
+        $("#marks_pdc").val("75").trigger("input");
+        $("#marks_fyp1").val("72").trigger("input");
 
         // $("#marks_mt").val("50").trigger("input");
         // $("#marks_sda").val("50").trigger("input");
