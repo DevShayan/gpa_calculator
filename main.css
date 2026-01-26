@@ -1,14 +1,14 @@
 :root {
     font-family: Arial, sans-serif;
-    --accent-color: blueviolet;
-    --accent-color-light: #ad73e4;
+    --accent-color: #2563eb;
+    --accent-color-light: #3b82f6;
     /* card */
-    --background-color: #f7f2fa;
-    --card-border-color: #cac4d0;
-    --card-bg-color: #fffbfe;
+    --background-color: #f8fafc;
+    --card-border-color: #e2e8f0;
+    --card-bg-color: #ffffff;
     /* input */
-    --input-border-color: #79747e;
-    --input-border-focus-color: #6750A4;
+    --input-border-color: #cbd5e1;
+    --input-border-focus-color: #2563eb;
 }
 
 body {
@@ -82,8 +82,7 @@ table {
 }
 
 th {
-    border-bottom: 1px solid;
-    border-width: 2px;
+    border-bottom: 2px solid var(--card-border-color);
 }
 
 td {
@@ -118,8 +117,9 @@ th:first-child {
 }
 
 #autofill_card {
-    background-color: #49454F;
+    background-color: #1e293b;
     cursor: pointer;
+    color: #ffffff;
 }
 
 #autofill-text {
@@ -135,16 +135,21 @@ th:first-child {
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --background-color: #25232A;
-        --card-border-color: #49454F;
-        --card-bg-color: #1C1B1F;
-        color: #e4e4e4;
+        --background-color: #0f172a;
+        --card-border-color: #1e293b;
+        --card-bg-color: #1e293b;
+        color: #f1f5f9;
         /* input */
-        --input-border-color: #938F99;
-        --input-border-focus-color: #D0BCFF;
+        --input-border-color: #334155;
+        --input-border-focus-color: #3b82f6;
     }
 
     .input-field {
-        color: whitesmoke;
+        color: #f1f5f9;
+    }
+
+    #autofill_card {
+        background-color: #334155;
+        color: #ffffff;
     }
 }
