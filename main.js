@@ -59,8 +59,9 @@ const creditHrs7 = new Map([
 ]);
 
 const creditHrs8 = new Map([
-    ["mt", 3],
-    ["sda", 3],
+    ["is", 3],
+    ["pp", 3],
+    ["ml", 3],
     ["fyp2", 3]
 ]);
 
@@ -145,8 +146,9 @@ function setCreditHours() {
     $("#c_hours_pdc").text(creditHrs7.get("pdc"));
     $("#c_hours_fyp1").text(creditHrs7.get("fyp1"));
 
-    $("#c_hours_mt").text(creditHrs8.get("mt"));
-    $("#c_hours_sda").text(creditHrs8.get("sda"));
+    $("#c_hours_is").text(creditHrs8.get("is"));
+    $("#c_hours_pp").text(creditHrs8.get("pp"));
+    $("#c_hours_ml").text(creditHrs8.get("ml"));
     $("#c_hours_fyp2").text(creditHrs8.get("fyp2"));
 }
 
@@ -224,8 +226,9 @@ function getQGradesForSem(semester) {
             (creditHrs7.get("pdc")*$("#gp_pdc").text()) +
             (creditHrs7.get("fyp1")*$("#gp_fyp1").text());
         case 8:
-            return (creditHrs8.get("mt")*$("#gp_mt").text()) +
-            (creditHrs8.get("sda")*$("#gp_sda").text()) +
+            return (creditHrs8.get("is")*$("#gp_is").text()) +
+            (creditHrs8.get("pp")*$("#gp_pp").text()) +
+            (creditHrs8.get("ml")*$("#gp_ml").text()) +
             (creditHrs8.get("fyp2")*$("#gp_fyp2").text());
 
         default: return null;
@@ -378,8 +381,9 @@ function autofillMarks() {
         $("#marks_pdc").val("75").trigger("input");
         $("#marks_fyp1").val("72").trigger("input");
 
-        // $("#marks_mt").val("50").trigger("input");
-        // $("#marks_sda").val("50").trigger("input");
+        // $("#marks_is").val("50").trigger("input");
+        // $("#marks_pp").val("50").trigger("input");
+        // $("#marks_ml").val("50").trigger("input");
         // $("#marks_fyp2").val("50").trigger("input");
     });
 }
