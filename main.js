@@ -43,7 +43,7 @@ const creditHrs5 = new Map([
 ]);
 
 const creditHrs6 = new Map([
-    ["ai", 3],
+    ["ai", 4],
     ["cc", 3],
     ["nsc", 3],
     ["oose", 3],
@@ -381,9 +381,9 @@ function autofillMarks() {
         $("#marks_pdc").val("75").trigger("input");
         $("#marks_fyp1").val("72").trigger("input");
 
-        // $("#marks_is").val("50").trigger("input");
-        // $("#marks_pp").val("50").trigger("input");
-        // $("#marks_ml").val("50").trigger("input");
-        // $("#marks_fyp2").val("50").trigger("input");
+        $("#marks_is").val("50").trigger("input");
+        $("#marks_pp").val("50").trigger("input");
+        $("#marks_ml").val("50").trigger("input");
+        $("#marks_fyp2").val("50").trigger("input");
     });
 }
