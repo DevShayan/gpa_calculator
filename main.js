@@ -375,9 +375,9 @@ function autofillMarks() {
         $("#marks_oose").val("75").trigger("input");
         $("#marks_wp").val("84").trigger("input");
 
-        $("#marks_dsc").val("49").trigger("input");
-        $("#marks_ap").val("49").trigger("input");
-        $("#marks_hci").val("49").trigger("input");
+        $("#marks_dsc").val("50").trigger("input");
+        $("#marks_ap").val("50").trigger("input");
+        $("#marks_hci").val("50").trigger("input");
         $("#marks_pdc").val("75").trigger("input");
         $("#marks_fyp1").val("72").trigger("input");
 
