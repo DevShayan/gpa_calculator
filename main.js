@@ -370,7 +370,7 @@ function autofillMarks() {
         $("#marks_dm").val("59").trigger("input");
 
         $("#marks_ai").val("50").trigger("input");
-        $("#marks_cc").val("50").trigger("input");
+        $("#marks_cc").val("70").trigger("input");
         $("#marks_nsc").val("50").trigger("input");
         $("#marks_oose").val("75").trigger("input");
         $("#marks_wp").val("84").trigger("input");
@@ -378,7 +378,7 @@ function autofillMarks() {
         $("#marks_dsc").val("50").trigger("input");
         $("#marks_ap").val("50").trigger("input");
         $("#marks_hci").val("50").trigger("input");
-        $("#marks_pdc").val("75").trigger("input");
+        $("#marks_pdc").val("73").trigger("input");
         $("#marks_fyp1").val("72").trigger("input");
 
         $("#marks_is").val("50").trigger("input");
