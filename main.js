@@ -377,13 +377,13 @@ function autofillMarks() {
 
         $("#marks_dsc").val("50").trigger("input");
         $("#marks_ap").val("50").trigger("input");
-        $("#marks_hci").val("50").trigger("input");
+        $("#marks_hci").val("55").trigger("input");
         $("#marks_pdc").val("73").trigger("input");
         $("#marks_fyp1").val("72").trigger("input");
 
-        $("#marks_is").val("50").trigger("input");
-        $("#marks_pp").val("50").trigger("input");
-        $("#marks_ml").val("50").trigger("input");
+        $("#marks_is").val("65").trigger("input");
+        $("#marks_pp").val("65").trigger("input");
+        $("#marks_ml").val("55").trigger("input");
         $("#marks_fyp2").val("50").trigger("input");
     });
 }
