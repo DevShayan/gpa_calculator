@@ -384,6 +384,6 @@ function autofillMarks() {
         $("#marks_is").val("65").trigger("input");
         $("#marks_pp").val("65").trigger("input");
         $("#marks_ml").val("55").trigger("input");
-        $("#marks_fyp2").val("50").trigger("input");
+        $("#marks_fyp2").val("83").trigger("input");
     });
 }
